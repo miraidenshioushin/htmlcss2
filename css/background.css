@@ -1,0 +1,65 @@
+
+section {
+  height: 100vh;
+}
+
+.g {
+
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  background-size: auto;
+
+}
+.img1{
+  background-image: url(https://images.assets-landingi.com/FfS3xPey/CG_website_banner_nologo.jpg);
+}
+.img2{
+  background-image:url(https://i.ibb.co/nLCt4m4/2.jpg);
+}
+.img3{
+  background-image:url(https://images.assets-landingi.com/5Dtdf4xd/Chernobylite_06_Aurora_1920.png);
+}
+.img4{
+  background-image: url(https://images.assets-landingi.com/INDz15ub/Powerplant_2.jpg);
+}
+.img5{
+  background-image: url(https://images.assets-landingi.com/ejv9BcLa/Chernobylite_03_Guns_1920.png);
+}
+.img6{
+  background-image: url(https://images.assets-landingi.com/VeD9255p/Chernobylite_Screen_03_Pripyat1920.png);
+
+}
+
+.img7{
+  background-image: url(https://blog-imgs-90.fc2.com/y/o/z/yozoranohoshigari/20160402164831a34.jpg);
+}
+
+.img8{
+  background-image: url(https://images.assets-landingi.com/yPewzEto/Chernobylite_Screen_02_Ally_or_foe_1920.png);
+}
+header{
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 5px;
+}
+
+nav{
+  line-height: 20px;
+  background-color: #eeeeee;
+  height: auto;
+  width:15%;
+  float: left;
+  padding:5px;
+}
+
+article{
+  width: 50%;
+  padding: 10px;
+}
+
+
+
+
+
