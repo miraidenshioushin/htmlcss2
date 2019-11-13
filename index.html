@@ -169,6 +169,17 @@
   </section>
 </section>
 
+<section class="g img9">
+  <article>
+    <h1>お問い合わせ</h1>
+
+    <input id="msg" type="text" size="40" value=""> <input id="btn" type="button" value="Confirm">
+
+    <div id="msg_c"></div>
+  </article>
+
+</section>
+
 
 
 <script>
@@ -240,6 +251,41 @@
             "these informations are being used in good faith and being used under the \"Fair Use\" provisions." +
             " If you think your copyright has been infringed, please contact us and we will remove them. WRITTEN BY MIRAIDENSHI-OUSHIN(Fsociety)")
   }
+  
+  
+  
+  
+  
+   window.onload = function(){
+    var oMsg = document.getElementById("msg");
+    var oBtn = document.getElementById("btn");
+    var oMsg_c = document.getElementById("msg_c");
+    var oUl = document.createElement("ul");
+    oMsg_c.appendChild(oUl);
+    oBtn.onclick = function(){
+      var sVal = oMsg.value;
+      var oli = document.createElement("li");
+      oli.innerHTML = sVal + " <button>削除</button>";
+      var oli1 = oUl.getElementsByTagName("li")
+      if(oli1.length>0){
+        oUl.insertBefore(oli,oli1[0])
+      }else{
+        oUl.appendChild(oli);
+      }
+      oMsg.value='';
+
+      var oSpan = document.getElementsByTagName("button");
+      for(var i=0; i<oSpan.length; i++){
+        oSpan[i].onclick = function(){
+          oUl.removeChild(this.parentNode);
+        }
+      }
+
+    }
+  }
+  
+  
+  
 
 </script>
 </body>
